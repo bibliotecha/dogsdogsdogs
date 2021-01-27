@@ -18,7 +18,6 @@ class App extends React.Component {
 
   refetch = () => {
     axios.get("https://dog.ceo/api/breeds/image/random").then((response) => {
-      console.log("re", this);
       this.setState({ photo: response.data.message });
     });
   };
